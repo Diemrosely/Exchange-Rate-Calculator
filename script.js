@@ -6,13 +6,13 @@ const amount2 = document.querySelector('#amount-two')
 
 const rateEl = document.querySelector('#rate');
 const swapBtn = document.querySelector('#swap')
-// const api = d043ac42276d7d94b22c174c
+const api = 'd043ac42276d7d94b22c174c'; 
 
 function calculate(){
     const currencyOne = currency1.value; 
     const currencyTwo = currency2.value; 
 
-    fetch(`https://v6.exchangerate-api.com/v6/d043ac42276d7d94b22c174c/latest/${currencyOne}
+    fetch(`https://v6.exchangerate-api.com/v6/${api}/latest/${currencyOne}
     `)
     .then(res => res.json())
     .then(data => {
